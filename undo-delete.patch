@@ -1,0 +1,13 @@
+diff -up alacarte-0.11.6/Alacarte/MenuEditor.py.undo-delete alacarte-0.11.6/Alacarte/MenuEditor.py
+--- alacarte-0.11.6/Alacarte/MenuEditor.py.undo-delete	2008-10-17 22:20:26.000000000 -0400
++++ alacarte-0.11.6/Alacarte/MenuEditor.py	2008-10-17 22:20:35.000000000 -0400
+@@ -344,8 +344,8 @@ class MenuEditor:
+ 		self.save()
+ 
+ 	def deleteItem(self, item):
+-		self.__writeItem(item, hidden=True)
+ 		self.__addUndo([item,])
++		self.__writeItem(item, hidden=True)
+ 		self.save()
+ 
+ 	def deleteMenu(self, menu):
